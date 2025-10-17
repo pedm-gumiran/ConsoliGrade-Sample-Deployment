@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, lemonade;
+}
+@layer utilities {
+  .text-secondary {
+    color: var(--cg-secondary);
+  }
+  .text-neutral {
+    color: var(--cg-neutral);
+  }
+  .text-accent {
+    color: var(--cg-accent);
+  }
+
+
+}
+
+:root {
+  --cg-primary: #2563eb; /* Blue */
+  --cg-secondary: #10b981; /* Green (Create) */
+  --cg-neutral: #374151; /* Gray */
+  --cg-bg: #f3f4f6; /* Light background */
+  --cg-accent: #f59e0b; /* Yellow (Edit) */
+  --cg-danger: #ef4444; /* Red (Delete) */
+}
+
+
+/*For wave animation */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-wave {
+  display: inline-block;
+  transform-origin: 70% 70%; /* pivot point for waving */
+  animation: wave 2s infinite;
+}

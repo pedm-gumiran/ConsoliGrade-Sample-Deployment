@@ -1,0 +1,68 @@
+# =====================================================
+#  Consolidated .gitignore for Capstone-ConsoliGrade-System
+# Covers main, client, and server folders
+# =====================================================
+
+# =====================
+# Logs
+# =====================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =====================
+# Node.js dependencies
+# =====================
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# =====================
+# Build output
+# =====================
+dist/
+dist-ssr/
+client/build/
+server/build/
+server/dist/
+
+# =====================
+# Environment variables
+# =====================
+.env
+.env.local
+client/.env
+server/.env
+
+# =====================
+# Local config files
+# =====================
+*.local
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =====================
+# Editor directories
+# =====================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# =====================
+# OS files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Misc
+# =====================
+coverage/
+*.tmp
